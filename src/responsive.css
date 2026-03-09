@@ -1,0 +1,638 @@
+/* ============================================================
+   responsive.css — Mobile & Tablet Breakpoints
+   Target: 320px → 992px
+   ============================================================ */
+
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+
+  /* ── Container ─────────────────────────────────────────── */
+  .container {
+    width: 100% !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  /* ============================================================
+     HEADER
+     ============================================================ */
+
+  header .header {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  /* Logo */
+  header .header .container a img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  /* Search bar — full width on mobile row */
+  header .header .container .search-box,
+  header .header .container form,
+  header .header .container .searchBox {
+    width: 100% !important;
+  }
+
+  /* User name text — hide on small screens */
+  header .header .container .userNameText {
+    display: none !important;
+  }
+
+  /* ============================================================
+     HOME SLIDER
+     ============================================================ */
+
+  .homeSlider {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .homeSlider .sliderHome,
+  .homeSlider .slider-aspect {
+    aspect-ratio: 16 / 7 !important;
+    border-radius: 10px !important;
+  }
+
+  .homeSlider .swiper-btn-prev,
+  .homeSlider .swiper-btn-next {
+    width: 30px !important;
+    height: 30px !important;
+    left: 8px !important;
+  }
+
+  .homeSlider .swiper-btn-next {
+    left: unset !important;
+    right: 8px !important;
+  }
+
+  /* ============================================================
+     NAVIGATION / CATEGORY TABS
+     ============================================================ */
+
+  .navigation {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .navigation::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+    padding: 4px 8px;
+  }
+
+  .navigation ul li a,
+  .navigation ul li button {
+    font-size: 12px !important;
+    padding: 5px 10px !important;
+    white-space: nowrap;
+  }
+
+  /* ============================================================
+     PRODUCT GRID
+     ============================================================ */
+
+  .productGrid,
+  .product-listing-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .productItem,
+  .product-item {
+    padding: 8px !important;
+  }
+
+  .productItem img,
+  .product-item img {
+    height: 160px !important;
+    object-fit: cover;
+  }
+
+  .productItem h4,
+  .product-item h4 {
+    font-size: 12px !important;
+    line-height: 1.3 !important;
+  }
+
+  .productItem .price,
+  .product-item .price {
+    font-size: 13px !important;
+  }
+
+  .productItem .actions,
+  .product-item .actions {
+    gap: 4px !important;
+  }
+
+  .productItem .actions button,
+  .product-item .actions button {
+    width: 28px !important;
+    height: 28px !important;
+    min-width: unset !important;
+  }
+
+  /* ============================================================
+     PRODUCT DETAILS PAGE
+     ============================================================ */
+
+  .productDetails,
+  .productDetials {
+    flex-direction: column !important;
+  }
+
+  .productDetails .productZoom,
+  .productDetials .productZoom {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .productDetails .productInfo,
+  .productDetials .productInfo {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-top: 16px !important;
+  }
+
+  .MuiDialog-paper {
+    margin: 0 !important;
+    max-height: 100% !important;
+    border-radius: 0 !important;
+  }
+
+  .MuiDialog-paper .productZoom {
+    width: 100% !important;
+  }
+
+  .MuiDialog-paper > .MuiDialogContent-root > div {
+    flex-direction: column !important;
+  }
+
+  .MuiDialog-paper > .MuiDialogContent-root > div > div:first-child,
+  .MuiDialog-paper > .MuiDialogContent-root > div > div:last-child {
+    width: 100% !important;
+  }
+
+  /* ============================================================
+     CART DRAWER
+     ============================================================ */
+
+  .cartPannel .MuiDrawer-paper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* ============================================================
+     CART PAGE
+     ============================================================ */
+
+  .cartPage,
+  .cart-page {
+    flex-direction: column !important;
+  }
+
+  .cartPage .cartLeft,
+  .cart-page .cartLeft {
+    width: 100% !important;
+  }
+
+  .cartPage .cartRight,
+  .cart-page .cartRight {
+    width: 100% !important;
+    margin-top: 16px !important;
+  }
+
+  .cartTable th:nth-child(3),
+  .cartTable td:nth-child(3) {
+    display: none !important;
+  }
+
+  /* ============================================================
+     CHECKOUT PAGE
+     ============================================================ */
+
+  .checkoutPage,
+  .checkout-page {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .checkoutPage .checkoutLeft,
+  .checkout-page .checkoutLeft,
+  .checkoutPage .checkoutRight,
+  .checkout-page .checkoutRight {
+    width: 100% !important;
+  }
+
+  /* ============================================================
+     MY ACCOUNT PAGE
+     ============================================================ */
+
+  .myAccountPage,
+  .my-account-page {
+    flex-direction: column !important;
+  }
+
+  .myAccountPage .sidebar,
+  .my-account-page .sidebar {
+    width: 100% !important;
+    margin-bottom: 16px !important;
+  }
+
+  .myAccountPage .content,
+  .my-account-page .content {
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+
+  /* ============================================================
+     MY LIST / WISHLIST PAGE
+     ============================================================ */
+
+  .myListPage .productGrid,
+  .my-list-page .productGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  /* ============================================================
+     ORDERS PAGE
+     ============================================================ */
+
+  .ordersPage .orderItem,
+  .orders-page .orderItem {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    padding: 12px !important;
+  }
+
+  .ordersPage .orderItem img,
+  .orders-page .orderItem img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+  .ordersPage .orderStatus,
+  .orders-page .orderStatus {
+    font-size: 11px !important;
+    padding: 2px 8px !important;
+  }
+
+  /* ============================================================
+     FOOTER
+     ============================================================ */
+
+  footer .footerBoxes,
+  footer .footer-columns {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  footer .footerBox,
+  footer .footer-col {
+    width: 100% !important;
+  }
+
+  footer .footerBox h4,
+  footer .footer-col h4 {
+    font-size: 14px !important;
+    margin-bottom: 10px !important;
+  }
+
+  footer .footerBox ul li,
+  footer .footer-col ul li {
+    font-size: 13px !important;
+    margin-bottom: 6px !important;
+  }
+
+  footer .footerBottom,
+  footer .footer-bottom {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 8px !important;
+  }
+
+  /* ============================================================
+     CATEGORY SECTION (Home page)
+     ============================================================ */
+
+  .catSlider,
+  .categorySlider {
+    padding: 0 !important;
+  }
+
+  .catSlider .swiper-slide,
+  .categorySlider .swiper-slide {
+    width: 80px !important;
+  }
+
+  .catSlider .swiper-slide img,
+  .categorySlider .swiper-slide img {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  .catSlider .swiper-slide p,
+  .categorySlider .swiper-slide p {
+    font-size: 10px !important;
+  }
+
+  /* ============================================================
+     SECTION HEADINGS
+     ============================================================ */
+
+  .sectionTitle,
+  .section-title {
+    font-size: 16px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .sectionTitle span,
+  .section-title span {
+    font-size: 16px !important;
+  }
+
+  /* ============================================================
+     BREADCRUMB
+     ============================================================ */
+
+  .breadcrumb,
+  .MuiBreadcrumbs-root {
+    font-size: 11px !important;
+  }
+
+  /* ============================================================
+     FILTERS SIDEBAR (Product listing)
+     ============================================================ */
+
+  .filterSidebar,
+  .filter-sidebar {
+    position: fixed !important;
+    left: -100% !important;
+    top: 0 !important;
+    height: 100vh !important;
+    width: 280px !important;
+    z-index: 1200 !important;
+    background: #fff !important;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.12) !important;
+    transition: left 0.3s ease !important;
+    overflow-y: auto !important;
+  }
+
+  .filterSidebar.open,
+  .filter-sidebar.open {
+    left: 0 !important;
+  }
+
+  .productListingMain,
+  .product-listing-main {
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+
+  /* ============================================================
+     FORMS — Login / Register / Checkout
+     ============================================================ */
+
+  .formBox,
+  .form-box,
+  .loginBox,
+  .registerBox {
+    width: 95% !important;
+    max-width: 420px !important;
+    padding: 24px 16px !important;
+    margin: 20px auto !important;
+  }
+
+  .formBox h2,
+  .form-box h2,
+  .loginBox h2,
+  .registerBox h2 {
+    font-size: 20px !important;
+  }
+
+  /* ============================================================
+     BANNER / PROMOTIONAL STRIPS
+     ============================================================ */
+
+  .bannerStrip,
+  .promoBanner {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 12px !important;
+    gap: 8px !important;
+  }
+
+  /* ============================================================
+     GENERAL UTILITIES
+     ============================================================ */
+
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .full-mobile {
+    width: 100% !important;
+  }
+
+  .stack-mobile {
+    flex-direction: column !important;
+  }
+
+  p, span, a, li {
+    font-size: 13px;
+  }
+
+  h1 { font-size: 22px !important; }
+  h2 { font-size: 18px !important; }
+  h3 { font-size: 16px !important; }
+  h4 { font-size: 14px !important; }
+  h5 { font-size: 13px !important; }
+
+  .MuiButton-root {
+    font-size: 12px !important;
+  }
+
+  * {
+    scrollbar-width: none;
+  }
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+/* ============================================================
+   HOME CAT SLIDER V2 — mobile (320px → 639px)
+   ============================================================ */
+
+@media only screen and (min-width: 320px) and (max-width: 639px) {
+
+  /* Skeleton sizing */
+  .slider-v2-skeleton {
+    height: 260px !important;
+  }
+  .slider-v2-skeleton .skeleton-img-area {
+    height: 260px !important;
+  }
+
+  /* Slide stacks vertically */
+  .homeSliderV2 .slide-inner {
+    flex-direction: column !important;
+    min-height: 260px !important;
+  }
+
+  /* Image area — full width, capped height */
+  .homeSliderV2 .img-side {
+    width: 100% !important;
+    min-height: 150px !important;
+    max-height: 170px !important;
+    padding: 14px !important;
+  }
+
+  .homeSliderV2 .slide-img {
+    max-height: 140px !important;
+  }
+
+  /* Info area — full width, compact */
+  .homeSliderV2 .info {
+    width: 100% !important;
+    padding: 10px 14px 30px !important;
+    gap: 5px !important;
+  }
+
+  .homeSliderV2 .slide-title {
+    font-size: 15px !important;
+  }
+
+  .homeSliderV2 .slide-price span:first-child {
+    font-size: 18px !important;
+  }
+
+  /* Smaller nav arrows */
+  .homeSliderV2 .swiper-button-next,
+  .homeSliderV2 .swiper-button-prev {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .homeSliderV2 .swiper-button-next::after,
+  .homeSliderV2 .swiper-button-prev::after {
+    font-size: 10px !important;
+  }
+
+  .homeSliderV2 .swiper-pagination {
+    bottom: 4px !important;
+  }
+
+}
+
+/* ============================================================
+   HOME CAT SLIDER V2 — tablet (640px → 992px)
+   ============================================================ */
+
+@media only screen and (min-width: 640px) and (max-width: 992px) {
+
+  /* Skeleton sizing */
+  .slider-v2-skeleton {
+    height: 360px !important;
+  }
+  .slider-v2-skeleton .skeleton-img-area {
+    height: 360px !important;
+  }
+
+  /* Slide — row layout, medium height */
+  .homeSliderV2 .slide-inner {
+    flex-direction: row !important;
+    min-height: 360px !important;
+  }
+
+  .homeSliderV2 .img-side {
+    min-height: 360px !important;
+    max-height: 360px !important;
+  }
+
+  .homeSliderV2 .slide-img {
+    max-height: 270px !important;
+  }
+
+  .homeSliderV2 .slide-title {
+    font-size: 18px !important;
+  }
+
+  .homeSliderV2 .slide-price span:first-child {
+    font-size: 20px !important;
+  }
+
+  .homeSliderV2 .swiper-button-next,
+  .homeSliderV2 .swiper-button-prev {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .homeSliderV2 .swiper-button-next::after,
+  .homeSliderV2 .swiper-button-prev::after {
+    font-size: 12px !important;
+  }
+
+}
+
+/* ============================================================
+   TABLET ONLY — 600px → 992px tweaks
+   ============================================================ */
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .homeSlider .slider-aspect {
+    aspect-ratio: 16 / 6 !important;
+    border-radius: 14px !important;
+  }
+
+  .productGrid,
+  .product-listing-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 14px !important;
+  }
+
+  .productItem img,
+  .product-item img {
+    height: 180px !important;
+  }
+
+  header .header .container a img {
+    max-width: 150px;
+  }
+
+  .formBox,
+  .form-box,
+  .loginBox,
+  .registerBox {
+    width: 80% !important;
+    padding: 32px 24px !important;
+  }
+
+  footer .footerBoxes,
+  footer .footer-columns {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+
+  footer .footerBox,
+  footer .footer-col {
+    width: calc(50% - 12px) !important;
+  }
+
+}

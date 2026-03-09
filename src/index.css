@@ -1,0 +1,255 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;  /* ← was padding: 2 which breaks ALL spacing */
+  box-sizing: border-box;
+}
+
+.MuiBadge-badge {
+  background-color: #f51111!important;
+  color: white!important;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #f51111 !important;
+}
+
+.homeSliderV2 .swiper-slide-active .info{
+  right: 0 !important;
+  opacity: 1 !important;
+}
+
+.homeSliderV2 .swiper-slide-active .info h3,
+.homeSliderV2 .swiper-slide-active .info h1,
+.homeSliderV2 .swiper-slide-active .info h2{
+  right: 0 !important;
+  opacity: 1 !important;
+}
+
+.homeSliderV2 .swiper-slide-active .info .btn_{
+  bottom: 0 !important;
+  opacity: 1 !important;
+}
+
+.homeSliderV2 .info h3{
+  transition-duration: 2s;
+}
+
+.homeSliderV2 .info h1{
+  transition-duration: 2.3s;
+}
+
+.homeSliderV2 .info h2{
+  transition-duration: 3s;
+}
+
+.homeSliderV2 .info .btn_{
+  transition-duration: 1.3s;
+}
+
+.link{
+  color: black !important;
+  text-transform: none !important;
+}
+
+.link:hover {
+  color: #f51111 !important;
+}
+
+.MuiTabs-indicator {
+  background-color: #f51111 !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #f51111 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: white !important;
+  border-radius: 50%;
+  color: black !important;
+}
+
+
+.homeCatSlider .swiper-button-next,
+.homeCatSlider .swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white !important;
+  border-radius: 50%;
+  color: black !important;
+}
+
+.swiper-button-prev svg, .swiper-button-next
+svg {
+width: 50% !important;
+height: 50% !important;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+nav button {
+  color: black !important;
+}
+
+nav button:hover {
+  color: #f51111 !important;
+}
+
+.sidebar .scroll{
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.ReactCollapse--collapse {
+  transition: height 300ms ease !important;
+}
+
+.range-slider{
+  height: 3px !important;
+}
+
+.range-slider .range-slider__thumb {
+  background: #f51111 !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.range-slider .range-slider__range {
+  background: #ffaaaa !important;
+}
+
+.imageSwiper .swiper-slide{
+  height: auto !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.cartPannel .MuiPaper-root{
+  width: 400px !important;
+}
+
+.myAccountMenu li a{
+  position: relative;
+  display: block;
+}
+
+.myAccountMenu li a.isActive::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #f51111;
+}
+
+.myAccountMenu li a.isActive button svg{
+  color: #f51111 !important;
+}
+
+.homeCatSwiper .swiper-button-next,
+.homeCatSwiper .swiper-button-prev {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border: 1px solid rgba(0,0,0,0.08);
+  color: #374151;
+  top: 40%;
+}
+.homeCatSwiper .swiper-button-next::after,
+.homeCatSwiper .swiper-button-prev::after {
+  font-size: 13px;
+  font-weight: 700;
+}
+.homeCatSwiper .swiper-button-disabled {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.productSwiper .swiper-wrapper {
+  align-items: stretch;
+}
+.productSwiper .swiper-slide {
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+}
+.productSwiper .swiper-slide > * {
+  flex: 1;
+}
+
+.productSwiper .swiper-button-next,
+.productSwiper .swiper-button-prev {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.07);
+  color: #333;
+  top: 42%;
+  transition: background 0.2s, color 0.2s;
+}
+.productSwiper .swiper-button-next:hover,
+.productSwiper .swiper-button-prev:hover {
+  background: #f51111;
+  color: #fff;
+}
+.productSwiper .swiper-button-next::after,
+.productSwiper .swiper-button-prev::after {
+  font-size: 12px;
+  font-weight: 800;
+}
+.productSwiper .swiper-button-disabled {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.iiz {
+    width: 100% !important;
+    height: 420px !important;
+    display: block;
+    position: relative;
+    overflow: hidden !important;
+  }
+  .iiz__img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    cursor: crosshair !important;
+    display: block;
+  }
+  .iiz__zoom-img {
+    position: absolute !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+  .iiz__zoom-portal {
+    display: none !important;
+  }
+
+  
+
