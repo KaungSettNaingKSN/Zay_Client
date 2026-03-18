@@ -150,7 +150,7 @@ const MyAccount = () => {
                   value={mobileValue}
                   onChange={(mobile) => setFormFields(prev => ({ ...prev, mobile: mobile ?? '' }))}
                   className='w-full sm:w-[calc(33.333%-8px)]'
-                  inputClassName='!w-full !h-[40px] !text-sm !px-[14px]'
+                  inputClassName='!w-full !h-[40px] !text-[16px] !px-[14px]'
                   countrySelectorStyleProps={{ buttonClassName: '!h-[40px] !text-sm !px-[14px]' }}
                   disabled={isLoading}
                 />
