@@ -294,7 +294,7 @@ const Address = () => {
                   type='text'
                   placeholder={label}
                   className='w-full h-[42px] border border-gray-200 focus:outline-none
-                             focus:border-[#f51111] rounded-lg px-3 text-[13px]
+                             focus:border-[#f51111] rounded-lg px-3 text-[16px]
                              transition-colors disabled:bg-gray-50 disabled:text-gray-400'
                 />
               </div>
@@ -308,7 +308,7 @@ const Address = () => {
                 onChange={(mobile) => setFormFields(prev => ({ ...prev, mobile: mobile ?? '' }))}
                 disabled={isLoading}
                 className='w-full'
-                inputClassName='!w-full !h-[42px] !text-[13px] !px-3 !border-gray-200 !rounded-r-lg'
+                inputClassName='!w-full !h-[42px] !text-[16px] !px-3 !border-gray-200 !rounded-r-lg'
                 countrySelectorStyleProps={{ buttonClassName: '!h-[42px] !px-3 !border-gray-200 !rounded-l-lg' }}
               />
             </div>
