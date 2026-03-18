@@ -212,7 +212,7 @@ const Search = () => {
           onBlur={handleBlur}
           placeholder='Search for products, brands…'
           autoComplete='off'
-          className='w-full h-full bg-transparent pl-4 pr-[76px] text-[14px]
+          className='w-full h-full bg-transparent pl-4 pr-[76px] text-[16px]
                      text-gray-800 placeholder:text-gray-400 focus:outline-none rounded-[10px]'
         />
 
